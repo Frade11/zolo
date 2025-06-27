@@ -1,0 +1,466 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazin Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Lora:wght@500&family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+</head>
+<body>
+<button class="menu-toggle" id="menuToggle">
+  ☰
+</button>
+    <header>
+  <div class="header-container">
+    <div class="header-left">
+  <div class="location">
+    <img src="./images/location.png" alt="">
+    <p>
+      Strada Sarmizegetusa<br>
+      48/8, Chișinău
+    </p>
+  </div>
+  <div class="number">
+    <img src="./images/number.png" alt="">
+    <p>078 112 112</p>
+  </div>
+</div>
+    <div class="header-center">
+        <a href="index.html">
+      <img src="./images/logol.png" alt="Logo" class="logoimg">
+      </a>
+    </div>
+
+    <div class="header-right">
+      <div class="login">
+        <a href="#">
+    <img src="./images/user.png" alt="Login">
+        </a></div>
+     <div class="shoping_cart">
+            <a href="cart.html" class="cart-link">
+                <img src="./images/cart.png" alt="Cart">
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+
+</header>
+  <div class="auth-overlay" id="authModal">
+        <div class="auth-container">
+            <button class="auth-close" id="closeAuth">&times;</button>
+            
+            <div class="auth-tabs">
+                <div class="auth-tab active" data-tab="login">Autentificare</div>
+                <div class="auth-tab" data-tab="register">Înregistrare</div>
+            </div>
+            <form class="auth-form active" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">Parola</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                
+                <button type="submit" class="auth-btn">Autentificare</button>
+                
+                <div class="form-message error" id="loginError"></div>
+                <div class="form-message success" id="loginSuccess"></div>
+            </form>
+            <form class="auth-form" id="registerForm">
+                <div class="form-group">
+                    <label for="regName">Nume și Prenume</label>
+                    <input type="text" id="regName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="regPassword">Parola</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="regConfirm">Confirmă Parola</label>
+                    <input type="password" id="regConfirm" required>
+                </div>
+                
+                <button type="submit" class="auth-btn">Înregistrare</button>
+                
+                <div class="form-message error" id="regError"></div>
+                <div class="form-message success" id="regSuccess"></div>
+            </form>
+        </div>
+    </div>
+<nav class="main-nav" id="mainNav">
+  <ul>
+    <li><a href="index.html">PRINCIPALA</a></li>
+    <li><a href="catalog.html">CATALOG</a></li>
+    <li><a href="despre-noi.html">DESPRE NOI</a></li>
+    <li><a href="comanda.html">LA COMANDA</a></li>
+  </ul>
+</nav>
+       <div class="product-page-container">
+        <div class="product-main">
+            <div class="product-gallery">
+                <img src="" alt="Imagine produs" id="product-main-image">
+            </div>
+            <div class="product-details">
+                <h1 id="product-title">Se încarcă...</h1>
+                <p class="product-price" id="product-price">- MDL</p>
+                <p class="product-description" id="product-description">Se încarcă descrierea...</p>
+                
+                <div class="product-actions">
+                    <button class="add-to-cart" id="add-to-cart-btn" data-id="">Adaugă în coș</button>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Specificații</h3>
+                    <ul id="product-specs">
+                        <li>Se încarcă...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <section class="related-products">
+            <h2>Produse similare</h2>
+            <div class="products-grid" id="related-products">
+
+            </div>
+        </section>
+    </div>
+      <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <a href="index.html" class="footer-logo">
+                <img src="./images/logol.png" alt="Bello Jewels Logo">
+            </a>
+            <p class="copyright">© 2023 Bello Jewels. Toate drepturile rezervate.</p>
+        </div>
+        
+        <div class="footer-right">
+            <div class="footer-links">
+                <h3>Pagini</h3>
+                <ul>
+                    <li><a href="index.html">Principala</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="despre-noi.html">Despre noi</a></li>
+                    <li><a href="comanda.html">Comandă</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contacts">
+                <h3>Contacte</h3>
+                <ul>
+                    <li>Strada Sarmizegetusa 48/8, Chișinău</li>
+                    <li>Telefon: 078 112 112</li>
+                    <li>Email: info@bellojewels.md</li>
+                </ul>
+            </div>
+            
+            <div class="footer-legal">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="despre-noi.html">Termeni și condiții</a></li>
+                    <li><a href="#" class="privacy-policy-link">Politica de confidențialitate</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal-overlay" id="privacyModal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-header">
+            <img src="./images/logol.png" alt="Bello Jewels" class="modal-logo">
+            <h2>Politica de confidențialitate</h2>
+        </div>
+        <div class="modal-text">
+            <div class="privacy-section">
+                <h3><i class="icon icon-shield"></i> Protecția datelor dumneavoastră</h3>
+                <p>La Bello Jewels, protejarea datelor dumneavoastră personale este o prioritate absolută. Acest document detaliază cum colectăm, utilizăm și protejăm informațiile dumneavoastră.</p>
+            </div>
+            
+            <div class="privacy-section">
+                <h3><i class="icon icon-data"></i> Ce date colectăm</h3>
+                <ul class="privacy-list">
+                    <li><span class="gold-text">Informații personale:</span> Nume, prenume, date de contact</li>
+                    <li><span class="gold-text">Date de tranzacție:</span> Istoric comenzi, preferințe</li>
+                    <li><span class="gold-text">Date tehnice:</span> Adresă IP, tip browser, dispozitiv</li>
+                </ul>
+            </div>
+            
+            <div class="privacy-section">
+                <h3><i class="icon icon-usage"></i> Utilizarea datelor</h3>
+                <div class="usage-grid">
+                    <div class="usage-item">
+                        <div class="usage-icon">1</div>
+                        <p>Procesarea comenzilor</p>
+                    </div>
+                    <div class="usage-item">
+                        <div class="usage-icon">2</div>
+                        <p>Îmbunătățirea serviciilor</p>
+                    </div>
+                    <div class="usage-item">
+                        <div class="usage-icon">3</div>
+                        <p>Comunicarea cu clienții</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="privacy-section">
+                <h3><i class="icon icon-security"></i> Securitate</h3>
+                <p>Utilizăm măsuri de criptare SSL și sisteme securizate pentru protecția datelor. Personalul nostru este instruit în protecția datelor.</p>
+            </div>
+            
+            <div class="accept-button">
+                <button id="acceptPrivacy">Am înțeles și accept</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="mainpage.js"></script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazin Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Lora:wght@500&family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+</head>
+<body>
+<button class="menu-toggle" id="menuToggle">
+  ☰
+</button>
+    <header>
+  <div class="header-container">
+    <div class="header-left">
+  <div class="location">
+    <img src="./images/location.png" alt="">
+    <p>
+      Strada Sarmizegetusa<br>
+      48/8, Chișinău
+    </p>
+  </div>
+  <div class="number">
+    <img src="./images/number.png" alt="">
+    <p>078 112 112</p>
+  </div>
+</div>
+    <div class="header-center">
+        <a href="index.html">
+      <img src="./images/logol.png" alt="Logo" class="logoimg">
+      </a>
+    </div>
+
+    <div class="header-right">
+      <div class="login">
+        <a href="#">
+    <img src="./images/user.png" alt="Login">
+        </a></div>
+     <div class="shoping_cart">
+            <a href="cart.html" class="cart-link">
+                <img src="./images/cart.png" alt="Cart">
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+
+</header>
+  <div class="auth-overlay" id="authModal">
+        <div class="auth-container">
+            <button class="auth-close" id="closeAuth">&times;</button>
+            
+            <div class="auth-tabs">
+                <div class="auth-tab active" data-tab="login">Autentificare</div>
+                <div class="auth-tab" data-tab="register">Înregistrare</div>
+            </div>
+            <form class="auth-form active" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">Parola</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                
+                <button type="submit" class="auth-btn">Autentificare</button>
+                
+                <div class="form-message error" id="loginError"></div>
+                <div class="form-message success" id="loginSuccess"></div>
+            </form>
+            <form class="auth-form" id="registerForm">
+                <div class="form-group">
+                    <label for="regName">Nume și Prenume</label>
+                    <input type="text" id="regName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="regPassword">Parola</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="regConfirm">Confirmă Parola</label>
+                    <input type="password" id="regConfirm" required>
+                </div>
+                
+                <button type="submit" class="auth-btn">Înregistrare</button>
+                
+                <div class="form-message error" id="regError"></div>
+                <div class="form-message success" id="regSuccess"></div>
+            </form>
+        </div>
+    </div>
+<nav class="main-nav" id="mainNav">
+  <ul>
+    <li><a href="index.html">PRINCIPALA</a></li>
+    <li><a href="catalog.html">CATALOG</a></li>
+    <li><a href="despre-noi.html">DESPRE NOI</a></li>
+    <li><a href="comanda.html">LA COMANDA</a></li>
+  </ul>
+</nav>
+       <div class="product-page-container">
+        <div class="product-main">
+            <div class="product-gallery">
+                <img src="" alt="Imagine produs" id="product-main-image">
+            </div>
+            <div class="product-details">
+                <h1 id="product-title">Se încarcă...</h1>
+                <p class="product-price" id="product-price">- MDL</p>
+                <p class="product-description" id="product-description">Se încarcă descrierea...</p>
+                
+                <div class="product-actions">
+                    <button class="add-to-cart" id="add-to-cart-btn" data-id="">Adaugă în coș</button>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Specificații</h3>
+                    <ul id="product-specs">
+                        <li>Se încarcă...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <section class="related-products">
+            <h2>Produse similare</h2>
+            <div class="products-grid" id="related-products">
+
+            </div>
+        </section>
+    </div>
+      <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <a href="index.html" class="footer-logo">
+                <img src="./images/logol.png" alt="Bello Jewels Logo">
+            </a>
+            <p class="copyright">© 2023 Bello Jewels. Toate drepturile rezervate.</p>
+        </div>
+        
+        <div class="footer-right">
+            <div class="footer-links">
+                <h3>Pagini</h3>
+                <ul>
+                    <li><a href="index.html">Principala</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="despre-noi.html">Despre noi</a></li>
+                    <li><a href="comanda.html">Comandă</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contacts">
+                <h3>Contacte</h3>
+                <ul>
+                    <li>Strada Sarmizegetusa 48/8, Chișinău</li>
+                    <li>Telefon: 078 112 112</li>
+                    <li>Email: info@bellojewels.md</li>
+                </ul>
+            </div>
+            
+            <div class="footer-legal">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="despre-noi.html">Termeni și condiții</a></li>
+                    <li><a href="#" class="privacy-policy-link">Politica de confidențialitate</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal-overlay" id="privacyModal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-header">
+            <img src="./images/logol.png" alt="Bello Jewels" class="modal-logo">
+            <h2>Politica de confidențialitate</h2>
+        </div>
+        <div class="modal-text">
+            <div class="privacy-section">
+                <h3><i class="icon icon-shield"></i> Protecția datelor dumneavoastră</h3>
+                <p>La Bello Jewels, protejarea datelor dumneavoastră personale este o prioritate absolută. Acest document detaliază cum colectăm, utilizăm și protejăm informațiile dumneavoastră.</p>
+            </div>
+            
+            <div class="privacy-section">
+                <h3><i class="icon icon-data"></i> Ce date colectăm</h3>
+                <ul class="privacy-list">
+                    <li><span class="gold-text">Informații personale:</span> Nume, prenume, date de contact</li>
+                    <li><span class="gold-text">Date de tranzacție:</span> Istoric comenzi, preferințe</li>
+                    <li><span class="gold-text">Date tehnice:</span> Adresă IP, tip browser, dispozitiv</li>
+                </ul>
+            </div>
+            
+            <div class="privacy-section">
+                <h3><i class="icon icon-usage"></i> Utilizarea datelor</h3>
+                <div class="usage-grid">
+                    <div class="usage-item">
+                        <div class="usage-icon">1</div>
+                        <p>Procesarea comenzilor</p>
+                    </div>
+                    <div class="usage-item">
+                        <div class="usage-icon">2</div>
+                        <p>Îmbunătățirea serviciilor</p>
+                    </div>
+                    <div class="usage-item">
+                        <div class="usage-icon">3</div>
+                        <p>Comunicarea cu clienții</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="privacy-section">
+                <h3><i class="icon icon-security"></i> Securitate</h3>
+                <p>Utilizăm măsuri de criptare SSL și sisteme securizate pentru protecția datelor. Personalul nostru este instruit în protecția datelor.</p>
+            </div>
+            
+            <div class="accept-button">
+                <button id="acceptPrivacy">Am înțeles și accept</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="mainpage.js"></script>
+</body>
+>>>>>>> d19b0ff18d05c95f53b3a7e2a44b7eacca9017f2
+</html>
